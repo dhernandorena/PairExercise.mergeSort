@@ -7,7 +7,20 @@ describe('Split Array function', function() {
   });
 });
 
-describe('Merge Sort', function() {
+describe('Mwrge Array function', function() {
+  it('is able to merge two sorted arrays into a single sorted array', function() {
+    expect(merge([1, 2, 8, 10], [7, 8, 9, 11])).toEqual([1, 2, 7, 8, 8, 9, 10, 11]);
+  });
+  it('is able to merge two sorted mismatched arrays into a single sorted array', function() {
+    expect(merge([3, 6, 9], [5, 7, 10, 12])).toEqual([3, 5, 6, 7, 9, 10, 12])
+  });
+  // it('is able to split an odd array into two halves', function() {
+  //   expect(split([1, 2, 3, 4, 5])).toEqual([[1, 2], [3, 4, 5]]);
+  // });
+});
+
+
+xdescribe('Merge Sort', function() {
   it('handles an empty array', function() {
     expect(mergeSort([])).toEqual([]);
   });
